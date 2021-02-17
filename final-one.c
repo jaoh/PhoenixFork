@@ -57,8 +57,7 @@
 #include <syslog.h>
 #include <unistd.h>
 
-#define BANNER \
-  "Welcome to " LEVELNAME ", brought to you by https://exploit.education"
+// #define BANNER \  "Welcome to " LEVELNAME ", brought to you by https://exploit.education"
 
 char username[128];
 char hostname[64];
@@ -136,7 +135,7 @@ int main(int argc, char **argv, char **envp) {
   setvbuf(stdout, NULL, _IONBF, 0);
   setvbuf(stderr, NULL, _IONBF, 0);
 
-  printf("%s\n", BANNER);
+  //printf("%s\n", BANNER);
 
   getipport();
   parser();
